@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lex & Co. – Demo Studio</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <!-- “Marketplace trust” top strip -->
+  <div class="topbar">
+    <div class="inner">
+      <div>✅ Risposta rapida <strong>24–48h</strong> · Preventivo chiaro · Nessun vincolo</div>
+      <div class="mini-links">
+        <a href="#prezzi">Prezzi</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contatto">Contatto</a>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="nav">
+      <div class="brand">
+        <div class="mark">LC</div>
+        <div class="name">
+          <b>Lex & Co.</b>
+          <span>demo studio</span>
+        </div>
+      </div>
+
+      <div class="search" role="search" aria-label="Cerca servizi">
+        <div class="ico">⌕</div>
+        <input id="searchInput" placeholder="Cerca: sito 1 page, 2–5 pagine, e-commerce, manutenzione…" />
+        <div class="kbd">Ctrl K</div>
+      </div>
+
+      <div class="nav-actions">
+        <a class="btn ghost" href="#prezzi">Vedi pacchetti</a>
+        <button class="btn primary" onclick="document.getElementById('contatto').scrollIntoView({behavior:'smooth'})">
+          Richiedi preventivo ↗
+        </button>
+      </div>
+    </div>
+
+    <div class="subnav">
+      <div class="inner">
+        <a class="pill" href="#settori"><span class="dot"></span>Settori</a>
+        <a class="pill" href="#processo"><span class="dot"></span>Come lavoro</a>
+        <a class="pill" href="#portfolio"><span class="dot"></span>Demo siti</a>
+        <a class="pill" href="#prezzi"><span class="dot"></span><b>Prezzi chiari</b></a>
+        <a class="pill" href="#contatto"><span class="dot"></span>Contatto</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-card">
+        <h1>Un sito <span class="grad">professionale</span> che ispira fiducia al primo sguardo.</h1>
+        <p class="lead">
+          Template “affidabile” e pulito (stile marketplace): struttura chiara, sezioni solide, call-to-action sempre visibili.
+          Perfetto per studi e professionisti: la credibilità qui è il prodotto.
+        </p>
+
+        <div class="trust-row">
+          <div class="trust-badge"><span class="ic">🔒</span><span>Layout “trust-first”</span></div>
+          <div class="trust-badge"><span class="ic">📱</span><span>Mobile-first</span></div>
+          <div class="trust-badge"><span class="ic">⚡</span><span>Caricamento rapido</span></div>
+          <div class="trust-badge"><span class="ic">🧾</span><span>Prezzi trasparenti</span></div>
+        </div>
+
+        <div class="trust-row" style="margin-top:1rem">
+          <a class="btn primary" href="#prezzi">Scegli un pacchetto</a>
+          <a class="btn ghost" href="#portfolio">Vedi esempi</a>
+          <span style="color:var(--muted);font-size:.92rem">📍 Demo · contenuti modificabili per qualsiasi settore</span>
+        </div>
+      </div>
+
+      <aside class="summary">
+        <div class="box">
+          <div class="rating">
+            <div>
+              <div style="font-weight:900;font-size:1.02rem">Valutazione percepita</div>
+              <small>“Sembra un servizio serio”</small>
+            </div>
+            <div class="stars" aria-label="5 stelle">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+          </div>
+
+          <ul>
+            <li>Sezioni standard “affidabilità” (FAQ, contatti, garanzie)</li>
+            <li>CTA sempre presenti, senza aggressività</li>
+            <li>Struttura ideale per conversione da mobile</li>
+            <li>Stile pulito: bianco, grigi, blu opaco</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <div style="font-weight:900">Cosa include il template</div>
+          <ul>
+            <li>Hero + servizi principali</li>
+            <li>Portfolio / esempi</li>
+            <li>Prezzi in tabelle chiare</li>
+            <li>FAQ + form contatto</li>
+          </ul>
+          <div style="margin-top:.85rem">
+            <a class="btn primary" href="#contatto" style="width:100%">Parliamone ↗</a>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- SETTORI -->
+    <section class="section" id="settori">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Settori</div>
+          <h2>Struttura universale: funziona per qualsiasi attività.</h2>
+        </div>
+        <p>Ristorazione, edilizia, studi professionali, artigiani, servizi locali: cambia contenuti e immagini, la “fiducia” resta.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <b>Professionisti & studi</b>
+          <p>Autorevolezza, chiarezza dei servizi, FAQ e contatto rapido.</p>
+          <div class="mini">
+            <span class="tag"><i></i>Credibilità</span>
+            <span class="tag"><i></i>FAQ</span>
+            <span class="tag"><i></i>CTA</span>
+          </div>
+        </div>
+        <div class="card">
+          <b>Local business</b>
+          <p>Orari, posizione, recensioni, galleria foto e “prenota / chiama”.</p>
+          <div class="mini">
+            <span class="tag"><i></i>Google-friendly</span>
+            <span class="tag"><i></i>Mobile</span>
+            <span class="tag"><i></i>Contatti</span>
+          </div>
+        </div>
+        <div class="card">
+          <b>Servizi & aziende</b>
+          <p>Presentazione professionale, listino, case study e richiesta preventivo.</p>
+          <div class="mini">
+            <span class="tag"><i></i>Preventivi</span>
+            <span class="tag"><i></i>Portfolio</span>
+            <span class="tag"><i></i>Processo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESSO -->
+    <section class="section" id="processo">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Metodo</div>
+          <h2>Come si costruisce fiducia: contenuti prima, estetica dopo.</h2>
+        </div>
+        <p>Struttura “marketplace”: poche scelte, tutto chiaro, nessun dubbio su cosa compra l’utente.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <b>1) Messaggio + struttura</b>
+          <p>Hero, prova sociale, servizi, prezzi e contatto. Zero fronzoli, zero ambiguità.</p>
+        </div>
+        <div class="card">
+          <b>2) Visual pulito e coerente</b>
+          <p>Palette neutra, spaziatura ampia, componenti “solidi” (bordo + shadow leggera).</p>
+        </div>
+        <div class="card">
+          <b>3) CTA + micro-fiducia</b>
+          <p>Badge, FAQ, policy, tempi di risposta, call-to-action ripetuta in modo naturale.</p>
+        </div>
+        <div class="card">
+          <b>4) Iterazione</b>
+          <p>Modifichi testi e immagini, poi “spacchetti” in pagine separate quando serve.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="section" id="portfolio">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Portfolio</div>
+          <h2>Esempi (demo): stile affidabile, pronto per foto reali.</h2>
+        </div>
+        <p>Qui metterai screenshot/immagini vere. Intanto: placeholder con layout coerente e “premium”.</p>
+      </div>
+
+      <div class="thumb-row">
+        <div class="thumb-card demo-card" data-demo="demos/servizi.html">
+          <div class="thumb"></div>
+          <b>Servizio Clienti</b>
+          <small>preventivi · pacchetti · trasparenza</small>
+
+          <div class="demo-actions">
+            <button class="btn ghost btn-preview">Anteprima</button>
+            <a class="btn primary" href="demos/servizi.html" target="_blank">
+              Apri demo ↗
+            </a>
+          </div>
+        </div>
+        <div class="thumb-card demo-card" data-demo="demos/ristorante.html">
+          <div class="thumb"></div>
+          <b>Ristorante – Fine Dining</b>
+          <small>Menu · prenotazioni · recensioni</small>
+
+          <div class="demo-actions">
+            <button class="btn ghost btn-preview">Anteprima</button>
+            <a class="btn primary" href="demos/ristorante.html" target="_blank">
+              Apri demo ↗
+            </a>
+          </div>
+        </div>
+        <div class="thumb-card demo-card" data-demo="demos/ecommerce.html">
+          <div class="thumb"></div>
+          <b>e-commerce</b>
+          <small>appetibilità · semplicità · rapidità</small>
+
+          <div class="demo-actions">
+            <button class="btn ghost btn-preview">Anteprima</button>
+            <a class="btn primary" href="demos/ecommerce.html" target="_blank">
+              Apri demo ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREZZI -->
+    <section class="section" id="prezzi">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Prezzi</div>
+          <h2>Pacchetti chiari. Nessuna sorpresa.</h2>
+        </div>
+        <p>Questa sezione “vende” perché riduce dubbi: cosa ottengo, quanto costa, cosa succede dopo.</p>
+      </div>
+
+      <div class="pricing">
+        <div class="card price">
+          <div class="top">
+            <div>
+              <b>Sito 1 page</b>
+              <p style="color:var(--muted);margin-top:.25rem">Landing completa, perfetta per partire.</p>
+            </div>
+            <span class="badge">Start</span>
+          </div>
+          <div class="money">299€ <span>una tantum</span></div>
+          <ul class="bullets">
+            <li>Hero + servizi + CTA</li>
+            <li>Sezione fiducia + contatti</li>
+            <li>Struttura SEO base</li>
+          </ul>
+          <a class="btn primary" href="#contatto">Richiedi questo</a>
+        </div>
+
+        <div class="card price featured">
+          <div class="top">
+            <div>
+              <b>Sito 2–5 pagine</b>
+              <p style="color:var(--muted);margin-top:.25rem">Più completo, più “azienda”.</p>
+            </div>
+            <span class="badge">Più richiesto</span>
+          </div>
+          <div class="money">549€ <span>una tantum</span></div>
+          <ul class="bullets">
+            <li>Homepage + servizi + contatti</li>
+            <li>Pagine extra (chi siamo, lavori, FAQ…)</li>
+            <li>CTA e struttura “trust-first”</li>
+          </ul>
+          <a class="btn primary" href="#contatto">Richiedi questo</a>
+        </div>
+
+        <div class="card price">
+          <div class="top">
+            <div>
+              <b>Mini e-commerce</b>
+              <p style="color:var(--muted);margin-top:.25rem">Catalogo essenziale + richieste.</p>
+            </div>
+            <span class="badge">Shop</span>
+          </div>
+          <div class="money">599€ <span>una tantum</span></div>
+          <ul class="bullets">
+            <li>Vetrina prodotti essenziale</li>
+            <li>CTA acquisto / richiesta info</li>
+            <li>Impostazione scalabile</li>
+          </ul>
+          <a class="btn primary" href="#contatto">Richiedi questo</a>
+        </div>
+      </div>
+
+      <div class="section-head" style="margin-top:1.2rem">
+        <div>
+          <div class="kicker">Manutenzione</div>
+          <h2>Retainer mensile (opzionale)</h2>
+        </div>
+        <p>Ideale se vuoi cambiare testi, immagini e sezioni senza pensarci.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <b>29,99€/mese</b>
+          <p>1 sola manutenzione al mese</p>
+        </div>
+        <div class="card">
+          <b>69,99€/mese</b>
+          <p>fino a 3 modifiche al sito</p>
+        </div>
+        <div class="card">
+          <b>79,99€/mese</b>
+          <p>manutenzione illimitata</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="section-head">
+        <div>
+          <div class="kicker">FAQ</div>
+          <h2>Domande che aumentano la fiducia (e le richieste).</h2>
+        </div>
+        <p>Se uno scorre e trova risposte, smette di “dubitare” e compila.</p>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>Quanto tempo serve per andare online?</summary>
+          <p>Dipende dai contenuti (testi/foto). In genere: prima bozza veloce, poi rifiniture e pubblicazione.</p>
+        </details>
+        <details>
+          <summary>Posso partire con 1 page e poi dividerla in pagine?</summary>
+          <p>Sì: è il modo migliore. Prima validi messaggio e offerta, poi spacchetti in pagine quando serve.</p>
+        </details>
+        <details>
+          <summary>Serve avere già immagini professionali?</summary>
+          <p>Aiuta molto. In demo usiamo placeholder; in produzione consigliate foto reali (anche da smartphone se ben fatte).</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CONTATTO -->
+    <section class="section" id="contatto">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Contatto</div>
+          <h2>Richiedi un preventivo</h2>
+        </div>
+        <p>Modulo semplice: meno campi = più invii. Poi dettagli in call/WhatsApp.</p>
+      </div>
+
+      <div class="contact">
+        <div>
+          <div class="card" style="box-shadow:var(--shadow-sm); padding:1.05rem">
+            <b>Checklist per partire (30 sec)</b>
+            <p style="color:var(--muted); margin-top:.35rem">
+              Scrivi: settore, obiettivo (contatti/prenotazioni/vendita), link competitor, e scegli il pacchetto.
+            </p>
+            <div class="fineprint">✅ Nessun dato sensibile nel form. Ti rispondo con una proposta chiara.</div>
+          </div>
+        </div>
+
+        <form class="form" id="contactForm">
+          <input required name="name" placeholder="Nome e cognome" />
+          <input name="contact" placeholder="Email o telefono" />
+          <select required name="package">
+            <option value="" selected disabled>Seleziona pacchetto</option>
+            <option>Sito 1 page — 299€</option>
+            <option>Sito 2–5 pagine — 549€</option>
+            <option>Mini e-commerce — 599€</option>
+            <option>Non sono sicuro</option>
+          </select>
+          <textarea name="msg" placeholder="Descrivi: settore, obiettivo e cosa deve fare il sito (es. prenotazioni, contatti, richieste preventivo)"></textarea>
+          <button class="btn primary" type="submit">Invia richiesta ↗</button>
+          <div class="fineprint">Risposta tipica: 24–48h lavorative.</div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="inner">
+      <span>Lex & Co. — demo “trust-first” (palette Clean SaaS)</span>
+      <a href="#home">Torna su ↑</a>
+    </div>
+  </footer>
+
+<div id="demoOverlay" class="demo-overlay hidden">
+  <div class="demo-frame">
+    <button id="closeDemo" aria-label="Chiudi">✕</button>
+    <iframe id="demoIframe" loading="lazy"></iframe>
+  </div>
+</div>
+
+<script src="index.js" defer></script>
+
+</body>
+</html>

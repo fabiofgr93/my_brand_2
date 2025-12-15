@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProntoServizi 24 – Idraulico, Elettricista, Caldaie</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="servizi.css">
+</head>
+
+<body>
+  <!-- “Marketplace trust” top strip -->
+  <div class="topbar">
+    <div class="inner">
+      <div>🧰 Pronto intervento <strong>24/7</strong> · Preventivo prima di partire · Tecnici verificati</div>
+      <div class="mini-links">
+        <a href="#servizi">Servizi</a>
+        <a href="#prezzi">Prezzi</a>
+        <a href="#recensioni">Recensioni</a>
+        <a href="#contatto">Contatto</a>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="nav">
+      <div class="brand">
+        <div class="mark">PS</div>
+        <div class="name">
+          <b>ProntoServizi 24</b>
+          <span>idraulico · elettricista · caldaie</span>
+        </div>
+      </div>
+
+      <div class="nav-actions">
+        <a class="btn ghost" href="tel:+390000000000" aria-label="Chiama ora">Chiama</a>
+        <button class="btn primary" onclick="document.getElementById('contatto').scrollIntoView({behavior:'smooth'})">
+          Richiedi intervento ↗
+        </button>
+      </div>
+    </div>
+
+    <div class="subnav">
+      <div class="inner">
+        <a class="pill" href="#servizi"><span class="dot"></span><b>Servizi</b></a>
+        <a class="pill" href="#come-funziona"><span class="dot"></span>Come funziona</a>
+        <a class="pill" href="#zone"><span class="dot"></span>Zone</a>
+        <a class="pill" href="#prezzi"><span class="dot"></span>Tariffe</a>
+        <a class="pill" href="#recensioni"><span class="dot"></span>Recensioni</a>
+        <a class="pill" href="#faq"><span class="dot"></span>FAQ</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-card">
+        <h1>Interventi rapidi e <span style="color:var(--primary);font-weight:900">preventivo chiaro</span>. Senza sorprese.</h1>
+        <p class="lead">
+          Idraulico, elettricista, assistenza caldaie e manutenzioni: arriviamo in giornata quando possibile
+          e ti diciamo il costo <strong>prima</strong> di iniziare.
+        </p>
+
+        <div class="trust-row">
+          <div class="trust-badge"><span class="ic">⏱</span><span>Uscita rapida</span></div>
+          <div class="trust-badge"><span class="ic">🧾</span><span>Prezzo trasparente</span></div>
+          <div class="trust-badge"><span class="ic">🧑‍🔧</span><span>Tecnici verificati</span></div>
+          <div class="trust-badge"><span class="ic">🛡</span><span>Garanzia intervento</span></div>
+        </div>
+
+        <div class="trust-row" style="margin-top:1rem">
+          <a class="btn primary" href="tel:+390000000000">Chiama ora</a>
+          <a class="btn ghost" href="#servizi">Vedi servizi</a>
+          <span style="color:var(--muted);font-size:.92rem">📍 Città + provincia · anche urgenze</span>
+        </div>
+
+        <div class="trust-row" style="margin-top:.85rem">
+          <span class="trust-badge"><span class="ic">💬</span><span>WhatsApp: +39 000 000 0000</span></span>
+          <span class="trust-badge"><span class="ic">📅</span><span>Prenotazioni anche online</span></span>
+        </div>
+      </div>
+
+      <aside class="summary">
+        <div class="box">
+          <div class="rating">
+            <div>
+              <div style="font-weight:900;font-size:1.02rem">Valutazione clienti</div>
+              <small>Basata su interventi reali</small>
+            </div>
+            <div class="stars" aria-label="5 stelle">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+          </div>
+
+          <ul>
+            <li>Preventivo comunicato prima del lavoro</li>
+            <li>Interventi urgenti + manutenzioni programmate</li>
+            <li>Fattura e tracciabilità (per aziende e privati)</li>
+            <li>Puntualità e pulizia a fine lavoro</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <div style="font-weight:900">Interventi più richiesti</div>
+          <ul>
+            <li>Perdite acqua / rubinetti</li>
+            <li>Scarichi intasati</li>
+            <li>Salvavita / prese / luci</li>
+            <li>Caldaie: blocco / manutenzione</li>
+          </ul>
+          <div style="margin-top:.85rem">
+            <a class="btn primary" href="#contatto" style="width:100%">Richiedi intervento ↗</a>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- SERVIZI -->
+    <section class="section" id="servizi">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Servizi</div>
+          <h2>Tutto quello che serve, in modo semplice.</h2>
+        </div>
+        <p>Seleziona il problema: ti richiamiamo o confermiamo l’uscita. Niente giri di parole.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <b>Idraulica</b>
+          <p>Perdite, rubinetti, sifoni, scarichi, sostituzioni sanitari, miscelatori.</p>
+          <div class="mini">
+            <span class="tag"><i></i>Urgenze</span>
+            <span class="tag"><i></i>Riparazioni</span>
+            <span class="tag"><i></i>Installazioni</span>
+          </div>
+        </div>
+        <div class="card">
+          <b>Elettricista</b>
+          <p>Salvavita, prese, luci, corto circuito, citofoni, piccoli impianti e manutenzione.</p>
+          <div class="mini">
+            <span class="tag"><i></i>Sicurezza</span>
+            <span class="tag"><i></i>Diagnosi</span>
+            <span class="tag"><i></i>Ripristino</span>
+          </div>
+        </div>
+        <div class="card">
+          <b>Caldaie & Clima</b>
+          <p>Blocco caldaia, manutenzione, verifica, pulizia, controlli periodici e assistenza.</p>
+          <div class="mini">
+            <span class="tag"><i></i>Manutenzione</span>
+            <span class="tag"><i></i>Assistenza</span>
+            <span class="tag"><i></i>Programmabile</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-3" style="margin-top:1rem">
+        <div class="card">
+          <b>Pronto intervento</b>
+          <p>Priorità alle urgenze: perdite importanti, blackout, caldaia ferma in inverno.</p>
+          <div class="mini"><span class="tag"><i></i>24/7</span><span class="tag"><i></i>Uscita rapida</span></div>
+        </div>
+        <div class="card">
+          <b>Manutenzioni programmate</b>
+          <p>Per condomini, negozi e uffici: interventi ricorrenti e report chiari.</p>
+          <div class="mini"><span class="tag"><i></i>B2B</span><span class="tag"><i></i>Report</span></div>
+        </div>
+        <div class="card">
+          <b>Piccole ristrutturazioni</b>
+          <p>Sostituzioni, adeguamenti e lavori mirati (preventivo dettagliato).</p>
+          <div class="mini"><span class="tag"><i></i>Trasparenza</span><span class="tag"><i></i>Step chiari</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COME FUNZIONA -->
+    <section class="section" id="come-funziona">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Come funziona</div>
+          <h2>3 step, zero confusione.</h2>
+        </div>
+        <p>Questo è il “flow” che converte: semplice, prevedibile, affidabile.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <b>1) Ci descrivi il problema</b>
+          <p>Telefono/WhatsApp o form: cosa succede, dove, urgenza e disponibilità.</p>
+        </div>
+        <div class="card">
+          <b>2) Confermiamo uscita e preventivo</b>
+          <p>Ti diciamo fascia oraria e costo stimato (o uscita + diagnosi).</p>
+        </div>
+        <div class="card">
+          <b>3) Intervento + chiusura pulita</b>
+          <p>Lavoro eseguito, test e indicazioni per evitare che il problema torni.</p>
+        </div>
+        <div class="card">
+          <b>Garanzia e documenti</b>
+          <p>Fattura su richiesta, tracciabilità e garanzia sull’intervento.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ZONE -->
+    <section class="section" id="zone">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Zone servite</div>
+          <h2>Città + provincia</h2>
+        </div>
+        <p>Inserisci le zone reali: migliora conversione e aiuta SEO locale.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card"><b>Centro città</b><p>Uscite rapide e slot giornalieri.</p></div>
+        <div class="card"><b>Prima cintura</b><p>Interventi su appuntamento e urgenze.</p></div>
+        <div class="card"><b>Provincia</b><p>Programmate e urgenze (valutazione tempi).</p></div>
+      </div>
+    </section>
+
+    <!-- PREZZI -->
+    <section class="section" id="prezzi">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Tariffe</div>
+          <h2>Prezzi “da subito” + trasparenza</h2>
+        </div>
+        <p>Non serve essere super dettagliati: basta dare riferimenti chiari e ridurre dubbi.</p>
+      </div>
+
+      <div class="pricing">
+        <div class="card price">
+          <div class="top">
+            <div>
+              <b>Uscita + diagnosi</b>
+              <p style="color:var(--muted);margin-top:.25rem">Per capire il problema e proporre soluzione.</p>
+            </div>
+            <span class="badge">Standard</span>
+          </div>
+          <div class="money">a partire da 39€ <span></span></div>
+          <ul class="bullets">
+            <li>Arrivo tecnico</li>
+            <li>Diagnosi e verifica</li>
+            <li>Preventivo prima del lavoro</li>
+          </ul>
+          <a class="btn primary" href="#contatto">Richiedi diagnosi</a>
+        </div>
+
+        <div class="card price featured">
+          <div class="top">
+            <div>
+              <b>Intervento rapido</b>
+              <p style="color:var(--muted);margin-top:.25rem">Per urgenze (quando possibile in giornata).</p>
+            </div>
+            <span class="badge">Più richiesto</span>
+          </div>
+          <div class="money">da 69€ <span></span></div>
+          <ul class="bullets">
+            <li>Priorità slot</li>
+            <li>Ripristino/risoluzione</li>
+            <li>Garanzia intervento</li>
+          </ul>
+          <a class="btn primary" href="tel:+390000000000">Chiama ora</a>
+        </div>
+
+        <div class="card price">
+          <div class="top">
+            <div>
+              <b>Manutenzione programmata</b>
+              <p style="color:var(--muted);margin-top:.25rem">Per caldaie/condomini/aziende.</p>
+            </div>
+            <span class="badge">B2B</span>
+          </div>
+          <div class="money">su preventivo <span></span></div>
+          <ul class="bullets">
+            <li>Piano interventi</li>
+            <li>Report e tracciabilità</li>
+            <li>Assistenza continuativa</li>
+          </ul>
+          <a class="btn primary" href="#contatto">Chiedi preventivo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECENSIONI -->
+    <section class="section" id="recensioni">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Recensioni</div>
+          <h2>Prova sociale che fa chiudere.</h2>
+        </div>
+        <p>Qui puoi collegare Google/Trustpilot in futuro. Intanto: esempi realistici.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <b>“Arrivati in 40 minuti”</b>
+          <p>Perdita sotto il lavello. Preventivo chiaro e lavoro pulito. Consigliati.</p>
+          <div class="mini"><span class="tag"><i></i>Idraulica</span><span class="tag"><i></i>Urgenza</span></div>
+        </div>
+        <div class="card">
+          <b>“Finalmente un elettricista serio”</b>
+          <p>Risolto il problema del salvavita. Spiegazioni chiare e costo onesto.</p>
+          <div class="mini"><span class="tag"><i></i>Elettrico</span><span class="tag"><i></i>Sicurezza</span></div>
+        </div>
+        <div class="card">
+          <b>“Caldaia ripartita subito”</b>
+          <p>Blocco improvviso. Diagnosi veloce, pezzo sostituito, test ok.</p>
+          <div class="mini"><span class="tag"><i></i>Caldaia</span><span class="tag"><i></i>Assistenza</span></div>
+        </div>
+      </div>
+
+      <div class="grid-2" style="margin-top:1rem">
+        <div class="card">
+          <b>“Puntuali e organizzati”</b>
+          <p>Manutenzione programmata per il negozio. Ora li chiamiamo sempre.</p>
+          <div class="mini"><span class="tag"><i></i>B2B</span><span class="tag"><i></i>Manutenzione</span></div>
+        </div>
+        <div class="card">
+          <b>“Spiegano tutto, zero sorprese”</b>
+          <p>Prima costo, poi intervento. È così che dovrebbe funzionare sempre.</p>
+          <div class="mini"><span class="tag"><i></i>Trasparenza</span><span class="tag"><i></i>Fiducia</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="section-head">
+        <div>
+          <div class="kicker">FAQ</div>
+          <h2>Riduci dubbi, aumenti chiamate.</h2>
+        </div>
+        <p>Le FAQ sono “vendita silenziosa”: rispondono prima che l’utente scappi.</p>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>Fate interventi in giornata?</summary>
+          <p>Sì quando possibile (dipende da zona e tipo di intervento). Per urgenze consigliamo la chiamata.</p>
+        </details>
+        <details>
+          <summary>Quanto costa l’uscita?</summary>
+          <p>Dipende da fascia oraria e distanza. In genere comunichiamo il costo prima di partire.</p>
+        </details>
+        <details>
+          <summary>Rilasciate fattura?</summary>
+          <p>Sì, su richiesta. Lavoriamo sia con privati che con aziende.</p>
+        </details>
+        <details>
+          <summary>Serve inviare foto del problema?</summary>
+          <p>Se puoi, sì: aiuta a capire il guasto e arrivare già con il materiale giusto.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CONTATTO -->
+    <section class="section" id="contatto">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Contatto</div>
+          <h2>Richiedi intervento (richiamo rapido)</h2>
+        </div>
+        <p>Modulo breve: più invii. I dettagli si definiscono al telefono.</p>
+      </div>
+
+      <div class="contact">
+        <div>
+          <div class="card" style="box-shadow:var(--shadow-sm); padding:1.05rem">
+            <b>Prima di inviare (20 sec)</b>
+            <p style="color:var(--muted); margin-top:.35rem">
+              Scrivi: tipo servizio, urgenza, zona e una breve descrizione.
+              Se hai foto, allegale via WhatsApp dopo l’invio.
+            </p>
+            <div class="fineprint">✅ Risposta tipica: 15–60 min (in orario lavorativo) · Urgenze: chiama.</div>
+
+            <div class="trust-row" style="margin-top:.85rem">
+              <a class="btn primary" href="tel:+390000000000">📞 Chiama</a>
+              <a class="btn whatsapp" href="#" id="waBtn">💬 WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="form" id="contactForm">
+          <input required name="name" placeholder="Nome e cognome" />
+          <input required name="contact" placeholder="Telefono (consigliato) o email" />
+          <select required name="service">
+            <option value="" selected disabled>Seleziona servizio</option>
+            <option>Idraulico (perdite / scarichi / rubinetti)</option>
+            <option>Elettricista (salvavita / prese / luci)</option>
+            <option>Caldaia (blocco / manutenzione / assistenza)</option>
+            <option>Altro</option>
+          </select>
+          <select name="urgency">
+            <option value="" selected>Urgenza (opzionale)</option>
+            <option>Urgenza – oggi</option>
+            <option>Entro 48 ore</option>
+            <option>Programmabile</option>
+          </select>
+          <textarea name="msg" placeholder="Descrivi il problema + zona (es. ‘perdita sotto lavello, Milano Porta Romana’)"></textarea>
+          <button class="btn primary" type="submit">Invia richiesta ↗</button>
+          <div class="fineprint">Inviando accetti di essere ricontattato per il preventivo/intervento.</div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="inner">
+      <span>ProntoServizi 24 — template “trust-first” (Clean SaaS)</span>
+      <a href="#home">Torna su ↑</a>
+    </div>
+  </footer>
+
+  <script src="servizi.js" defer></script>
+
+</body>
+</html>

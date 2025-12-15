@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="it" data-template="luxe-commerce">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nord & Co. — E-commerce Demo</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- THEME ENGINE (palettes + applyTheme) -->
+  <script src="./theme.js" defer></script>
+
+  <link rel="stylesheet" href="ecommerce.css">
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- TRUST BAR -->
+    <div class="topbar">
+      <div class="inner">
+        <div class="chips">
+          <span class="chip"><i></i>Spedizione 24/48h</span>
+          <span class="chip"><i></i>Reso 30 giorni</span>
+          <span class="chip"><i></i>Pagamenti sicuri</span>
+        </div>
+        <div>Supporto clienti: <b style="color:var(--text)">chat + email</b></div>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+      <nav class="nav">
+        <div class="brand">
+          <div class="mark">N</div>
+          <div>
+            <div class="t1">Nord & Co.</div>
+            <div class="t2">e-commerce demo</div>
+          </div>
+        </div>
+
+        <div class="links">
+          <a href="#prodotti">Prodotti</a>
+          <a href="#recensioni">Recensioni</a>
+          <a href="#assistenza">Assistenza</a>
+        </div>
+
+        <div class="actions">
+          <button class="btn ghost" id="theme-toggle" title="Cambia tema (demo)">Tema</button>
+          <button class="icon-btn" id="cart-btn" title="Carrello (demo)">
+            🛒
+            <span class="badge" id="cart-count">0</span>
+          </button>
+          <button class="btn primary" onclick="document.getElementById('assistenza').scrollIntoView({behavior:'smooth'})">
+            Contattaci ↗
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-left">
+          <div class="tag">Nuova collezione <b>2026</b> · qualità verificata</div>
+          <h1>Un e-commerce <span style="color:var(--primary)">affidabile</span>, elegante, pronto a vendere.</h1>
+          <p class="lead">
+            Template sobrio “premium”: griglia prodotti, trust signals, recensioni e CTA chiare.
+            Perfetto per brand e attività che vogliono sembrare “grandi” subito.
+          </p>
+
+          <div class="hero-ctas">
+            <a class="btn primary" href="#prodotti">Vai ai prodotti</a>
+            <a class="btn ghost" href="#recensioni">Vedi recensioni</a>
+            <span class="mini">✔ Checkout veloce · ✔ Mobile-first · ✔ SEO-ready</span>
+          </div>
+
+          <div class="trust-row">
+            <span class="trust"><span class="dot"></span><strong>4.8/5</strong> media recensioni</span>
+            <span class="trust"><span class="dot"></span><strong>SSL</strong> + pagamenti protetti</span>
+            <span class="trust"><span class="dot"></span><strong>Reso</strong> semplice</span>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-media" aria-label="Immagine hero prodotto (demo)"></div>
+          <div class="hero-strip">
+            <div><b>Best seller</b> · orologio automatico</div>
+            <div>Da <b>129€</b> · spedizione inclusa</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUCTS -->
+      <section id="prodotti" class="section">
+        <div class="head">
+          <div>
+            <div class="ey">Prodotti</div>
+            <h2>Griglia chiara, CTA forte, fiducia immediata.</h2>
+          </div>
+          <p>
+            In un e-commerce vincente: titoli puliti, prezzi visibili, benefici rapidi (reso/spedizione/garanzia).
+          </p>
+        </div>
+
+        <div class="grid" id="product-grid">
+          <!-- product 1 -->
+          <article class="p">
+            <div class="img" style="background-image:url('https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80')"></div>
+            <div class="body">
+              <div class="k">
+                <div class="name">Chrono One</div>
+                <div class="price">129€</div>
+              </div>
+              <div class="desc">Acciaio satinato, vetro zaffiro, stile essenziale.</div>
+              <div class="pill"><i></i>Spedizione 24/48h</div>
+              <button class="add" data-add="Chrono One">Aggiungi al carrello</button>
+            </div>
+          </article>
+
+          <!-- product 2 -->
+          <article class="p">
+            <div class="img" style="background-image:url('https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1200&q=80')"></div>
+            <div class="body">
+              <div class="k">
+                <div class="name">Camera Pro</div>
+                <div class="price">249€</div>
+              </div>
+              <div class="desc">Scatti nitidi, controllo manuale, corpo compatto.</div>
+              <div class="pill"><i></i>Reso 30 giorni</div>
+              <button class="add" data-add="Camera Pro">Aggiungi al carrello</button>
+            </div>
+          </article>
+
+          <!-- product 3 -->
+          <article class="p">
+            <div class="img" style="background-image:url('https://images.unsplash.com/photo-1511385348-a52b4a160dc2?auto=format&fit=crop&w=1200&q=80')"></div>
+            <div class="body">
+              <div class="k">
+                <div class="name">Wireless Audio</div>
+                <div class="price">89€</div>
+              </div>
+              <div class="desc">Bassi puliti, cancellazione rumore, autonomia lunga.</div>
+              <div class="pill"><i></i>Pagamenti sicuri</div>
+              <button class="add" data-add="Wireless Audio">Aggiungi al carrello</button>
+            </div>
+          </article>
+
+          <!-- product 4 -->
+          <article class="p">
+            <div class="img" style="background-image:url('https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=1200&q=80')"></div>
+            <div class="body">
+              <div class="k">
+                <div class="name">Runner Classic</div>
+                <div class="price">79€</div>
+              </div>
+              <div class="desc">Comode e leggere, look premium, materiali resistenti.</div>
+              <div class="pill"><i></i>Garanzia 12 mesi</div>
+              <button class="add" data-add="Runner Classic">Aggiungi al carrello</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- REVIEWS -->
+      <section id="recensioni" class="section">
+        <div class="head">
+          <div>
+            <div class="ey">Recensioni</div>
+            <h2>Social proof “pulito” (stile grande brand).</h2>
+          </div>
+          <p>
+            Recensioni + numeri chiari = più fiducia e meno incertezza in acquisto. :contentReference[oaicite:1]{index=1}
+          </p>
+        </div>
+
+        <div class="test">
+          <div class="quotes">
+            <div class="q">
+              <div class="t">★★★★★ — “Design premium, spedizione rapidissima.”</div>
+              <div class="m">Marco R.</div>
+              <div class="r">“Il sito è chiarissimo: prezzo, reso e garanzia subito visibili.”</div>
+            </div>
+            <div class="q">
+              <div class="t">★★★★★ — “Checkout veloce, zero frizione.”</div>
+              <div class="m">Giulia S.</div>
+              <div class="r">“Ho comprato da mobile in 1 minuto. Esperienza top.”</div>
+            </div>
+            <div class="q">
+              <div class="t">★★★★☆ — “Assistenza super disponibile.”</div>
+              <div class="m">Luca P.</div>
+              <div class="r">“Mi hanno risposto in chat e risolto subito.”</div>
+            </div>
+          </div>
+
+          <aside class="aside">
+            <div>
+              <div style="font-weight:900;font-size:1.05rem">Numeri (demo)</div>
+              <div class="kv" style="margin-top:.8rem">
+                <div class="row"><span>Media recensioni</span><b>4.8/5</b></div>
+                <div class="row"><span>Ordini evasi</span><b>12.4k</b></div>
+                <div class="row"><span>Resi</span><b>“semplici”</b></div>
+              </div>
+            </div>
+
+            <div>
+              <button class="btn primary" style="width:100%" onclick="document.getElementById('assistenza').scrollIntoView({behavior:'smooth'})">
+                Hai domande? Contattaci ↗
+              </button>
+              <div style="margin-top:.6rem;color:var(--muted);font-size:.9rem">
+                Tip: puoi sostituire questa sezione con widget Trustpilot/Google Reviews.
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- SUPPORT -->
+      <section id="assistenza" class="section">
+        <div class="head">
+          <div>
+            <div class="ey">Assistenza</div>
+            <h2>Contatto semplice + promesse chiare.</h2>
+          </div>
+          <p>Questa sezione, in produzione, diventa “FAQ + contatti + policy resi/spedizioni”.</p>
+        </div>
+
+        <div class="hero-left" style="padding:1.25rem">
+          <div style="display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:1rem;align-items:start">
+            <div>
+              <div style="font-weight:900;font-size:1.1rem">Scrivici (demo)</div>
+              <p style="margin-top:.5rem;color:var(--muted)">
+                Risposta entro 24h lavorative. Nessuno spam. Solo supporto e ordini.
+              </p>
+              <div class="trust-row" style="margin-top:.9rem">
+                <span class="trust"><span class="dot"></span><strong>Reso 30gg</strong> senza stress</span>
+                <span class="trust"><span class="dot"></span><strong>Pagamenti</strong> protetti</span>
+              </div>
+            </div>
+
+            <form id="support-form" style="display:grid;gap:.65rem">
+              <input required placeholder="Nome" style="width:100%;background:rgba(0,0,0,.18);border:1px solid var(--line);color:var(--text);border-radius:14px;padding:.7rem .8rem;outline:none" />
+              <input required placeholder="Email" style="width:100%;background:rgba(0,0,0,.18);border:1px solid var(--line);color:var(--text);border-radius:14px;padding:.7rem .8rem;outline:none" />
+              <textarea required placeholder="Messaggio" style="width:100%;min-height:92px;resize:vertical;background:rgba(0,0,0,.18);border:1px solid var(--line);color:var(--text);border-radius:14px;padding:.7rem .8rem;outline:none"></textarea>
+              <button class="btn primary" type="submit" style="width:100%">Invia</button>
+              <div style="color:var(--muted);font-size:.86rem">
+                Demo: nessun invio reale, solo conferma UI.
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="inner">
+        <div>© <span id="year"></span> Nord & Co. — Template e-commerce demo</div>
+        <div class="footlinks">
+          <a href="#prodotti">Prodotti</a>
+          <a href="#recensioni">Recensioni</a>
+          <a href="#assistenza">Assistenza</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="servizi.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ristorante Aurora — Fine Dining</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="ristorante.css">
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <span class="brand-mark"></span>
+      <div>
+        <div class="brand-title">Ristorante Aurora</div>
+        <div class="brand-sub">fine dining · degustazione</div>
+      </div>
+    </div>
+
+    <nav class="links">
+      <a href="#story">Storia</a>
+      <a href="#menu">Menu</a>
+      <a href="#scarica-menu">Scarica</a>
+      <a href="#reviews">Recensioni</a>
+      <a href="#gallery">Galleria</a>
+      <a href="#prenota">Prenota</a>
+    </nav>
+
+    <button class="btn primary" data-scroll="#prenota">Prenota ↗</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="hero-grain"></div>
+
+  <div class="container hero-inner">
+    <div class="kicker reveal"><i></i><span>Cucina d’autore · stagionalità</span></div>
+
+    <h1 class="reveal">
+      Un’esperienza <span>essenziale</span>, costruita sul gusto.
+    </h1>
+
+    <p class="reveal">
+      Degustazioni curate, ingredienti locali, servizio preciso.
+    </p>
+
+    <div class="hero-actions reveal">
+      <a class="btn primary" href="#prenota">Prenota ora</a>
+      <a class="btn ghost" href="#menu">Vedi menu</a>
+    </div>
+
+    <div class="pill-links reveal">
+      <a class="pill-link" href="#" target="_blank">TheFork ↗</a>
+      <a class="pill-link" href="#" target="_blank">Tripadvisor ↗</a>
+      <a class="pill-link" href="#scarica-menu">Scarica menu ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section id="story">
+  <div class="container split">
+    <div class="img-frame reveal">
+      <img src="../assets/img/ristorante/chef.jpg" alt="Chef in cucina">
+    </div>
+
+    <div class="copy reveal">
+      <h2>La cucina come narrazione</h2>
+      <p>Aurora nasce dall’incontro tra tecnica e territorio.</p>
+      <ul>
+        <li>Degustazione 6 o 9 portate</li>
+        <li>Wine pairing selezionato</li>
+        <li>Allergie gestite con cura</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu">
+  <div class="container menu">
+    <div class="menu-block reveal">
+      <h3>Degustazione 6 portate</h3>
+      <div class="dish"><b>Crudo, agrumi, erbe</b><span class="price">€95</span></div>
+      <div class="dish"><b>Riso, funghi, fondo bruno</b><span class="price">—</span></div>
+    </div>
+
+    <div class="menu-block reveal">
+      <h3>Degustazione 9 portate</h3>
+      <div class="dish"><b>Benvenuto dello chef</b><span class="price">€135</span></div>
+      <div class="dish"><b>Capasanta, cavolfiore</b><span class="price">—</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOAD -->
+<section id="scarica-menu">
+  <div class="container download reveal">
+    <div>
+      <h3>Scarica il menu (PDF)</h3>
+      <p>Consulta portate, prezzi e allergeni.</p>
+
+      <div class="download-actions">
+        <a class="btn primary" href="../assets/pdf/menu-aurora.pdf" download>Scarica PDF ↓</a>
+        <a class="btn ghost" href="../assets/pdf/menu-aurora.pdf" target="_blank">Apri ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="container reviews">
+    <article class="review reveal">★★★★★ Esperienza impeccabile</article>
+    <article class="review reveal">★★★★★ Cucina raffinata</article>
+    <article class="review reveal">★★★★☆ Atmosfera elegante</article>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="container gallery">
+    <img src="../assets/img/ristorante/dish-1.jpg">
+    <img src="../assets/img/ristorante/sala.jpg">
+    <img src="../assets/img/ristorante/dessert.jpg">
+  </div>
+</section>
+
+<!-- PRENOTA -->
+<section id="prenota">
+  <div class="container reserve reveal">
+    <h3>Prenota il tuo tavolo</h3>
+    <form id="res-form">
+      <input placeholder="Nome" required>
+      <input placeholder="Telefono" required>
+      <button class="btn primary">Invia richiesta</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container foot">
+    <span>© 2025 Ristorante Aurora — demo</span>
+  </div>
+</footer>
+
+<script src="ristorante.js" defer></script>
+</body>
+</html>
