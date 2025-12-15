@@ -547,6 +547,109 @@
       cursor:pointer;
     }
 
+    /* ===== Portfolio demo cards (premium covers) ===== */
+    .thumb-row{
+      margin-top:.9rem;
+      display:grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: .85rem;
+    }
+
+    .demo-card{
+      border-radius: var(--r2);
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow-md);
+      overflow:hidden;
+    }
+
+    .demo-media{
+      position:relative;
+      display:block;
+      aspect-ratio: 16 / 9;
+      background:
+        radial-gradient(circle at 12% 22%, rgba(37,99,235,.18), transparent 45%),
+        radial-gradient(circle at 88% 78%, rgba(219,234,254,.95), transparent 55%),
+        linear-gradient(135deg, #FFFFFF, #F1F5F9);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .demo-media img{
+      width:100%;
+      height:100%;
+      object-fit: cover;
+      display:block;
+      transform: scale(1.01);
+      transition: transform .35s ease, filter .35s ease;
+      filter: saturate(1.02) contrast(1.02);
+    }
+
+    .demo-overlay{
+      position:absolute;
+      inset:0;
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      padding: .85rem;
+      background: linear-gradient(180deg, rgba(15,23,42,0) 45%, rgba(15,23,42,.55) 100%);
+      pointer-events:none;
+    }
+
+    .demo-badge{
+      pointer-events:none;
+      display:inline-flex;
+      align-items:center;
+      gap:.45rem;
+      padding:.32rem .6rem;
+      border-radius:999px;
+      font-weight:800;
+      font-size:.78rem;
+      color:#0F172A;
+      background: rgba(255,255,255,.92);
+      border: 1px solid rgba(255,255,255,.75);
+      box-shadow: 0 10px 24px rgba(15,23,42,.18);
+    }
+
+    .demo-cta{
+      pointer-events:none;
+      font-weight:900;
+      color: rgba(255,255,255,.95);
+      text-shadow: 0 10px 30px rgba(15,23,42,.45);
+    }
+
+    .demo-body{
+      padding: .9rem .95rem 1rem;
+    }
+
+    .demo-body b{
+      display:block;
+      font-size:1.02rem;
+    }
+
+    .demo-body small{
+      display:block;
+      margin-top:.25rem;
+      color: var(--muted);
+    }
+
+    .demo-actions{
+      margin-top:.85rem;
+      display:flex;
+      gap:.6rem;
+      flex-wrap:wrap;
+    }
+
+    .demo-card:hover .demo-media img{
+      transform: scale(1.06);
+      filter: saturate(1.05) contrast(1.05);
+    }
+
+    /* Responsive */
+    @media (max-width: 980px){
+      .thumb-row{grid-template-columns:1fr;}
+    }
+
+
 
     /* Responsive */
     @media (max-width: 980px){
